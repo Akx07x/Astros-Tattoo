@@ -1,0 +1,485 @@
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color:black;
+    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px); background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.btn-menu {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.5rem;
+    right: 100px;
+    top: 43px;
+    z-index: 2;
+    display: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* Barra de Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav a img {
+    height: 70px;
+}
+
+nav a img:hover {
+    scale: 1.2;
+}
+
+.nav-menu {
+    display: flex;
+    flex: 1;
+    padding-left: 15px;
+}
+
+.nav-menu li {
+    padding: 5px;
+    margin: 6px;
+    list-style: none;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-menu-right {
+    margin-right: 30px;
+}
+
+.nav-menu-right li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-menu-right li a i {
+    color: white;
+}
+
+/* Hero 1 */
+.container-hero {
+    color: white;
+    width: 100%;
+    height: 400px;
+    background: url(img/hero1.png) no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.hero {
+    width: 34%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(247, 247, 247);
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid black;
+    background-color: rgb(71, 71, 71);
+    border-radius: 15px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+/* Cajas */
+
+/* Titulo */
+
+.tittle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    color: white;
+    margin: 10px 0px;
+    padding: 5px 40px;
+}
+
+.tittle-section a {
+    text-decoration: none;
+    color: white;
+    width: 80%;
+}
+
+.tittle-section a:hover {
+    scale: 1.05;
+}
+
+.tittle-section a i {
+    float: right;
+}
+
+/* Cajas Nº1 */
+
+.container-realismo {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container-realismo .box img {
+width: 100%;
+height: 13em;
+}
+
+.container-realismo .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.container-realismo .box h3 {
+    border-bottom: 2px solid white;
+}
+
+.container-realismo .box p {
+    margin: 7px;
+}
+
+/* Hero 2 */
+
+.container-hero-2 {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background: url(img/hero2.png) no-repeat center center/cover;
+}
+
+/* Cajas nº2 */
+
+.container-geometricos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container-geometricos .box img {
+width: 100%;
+height: 13em;
+}
+
+.container-geometricos .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.container-geometricos .box h3 {
+    border-bottom: 2px solid white;
+}
+
+.container-geometricos .box p {
+    margin: 7px;
+}
+
+/* Hero 3 */
+
+.container-hero-3 {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background: url(img/hero3.png) no-repeat center center/cover;
+}
+
+/* Cajas Nº3 */
+
+.container-tradicionales {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container-tradicionales .box img {
+width: 100%;
+height: 13em;
+}
+
+.container-tradicionales .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.container-tradicionales .box h3 {
+    border-bottom: 2px solid white;
+}
+
+.container-tradicionales .box p {
+    margin: 7px;
+}
+
+/* final del contenedor */
+
+.bottom-container {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.bottom-container h4 b {
+    font-size: 57px;
+    font-family: 'Babylonica', cursive;
+}
+
+.social {
+    text-align: center;
+    margin: 5px 0px 15px 0px
+}
+
+.social a {
+    font-size: 26px;
+    margin: 10px;
+    color: white;
+}
+
+.social a:hover {
+    border-bottom: 4px solid white;
+}
+
+/* Footer */
+
+.footer-links {
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+    list-style: none;
+}
+
+.footer-container ul li {
+    line-height: 1.8;
+}
+
+.footer-container ul li a {
+    color: #a1a1a1;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    color: #a1a1a1;
+}
+
+footer b {
+    font-family: 'Babylonica', cursive;
+    font-size: 31px;
+    margin: 4px;
+}
+
+/* Convertir Web en no seleccionable con el ratón */
+
+img, p, h1, h1, h3, h4, h5, h6, a {
+    user-select: none;
+}
+
+/* Media queries */
+
+@media (max-width: 821px) {
+
+    .container-realismo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-geometricos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-tradicionales {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 691px) {
+
+    .nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgb(95, 95, 95);
+        opacity: .9;
+        text-align: center;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .btn-menu  {
+        display: block;
+        right: 120px;
+    }
+
+
+    .nav-menu.show {
+        transform: translateX(0px);
+    }
+
+    .nav-menu li {
+        padding: 10px;
+    }
+
+    .container-realismo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-realismo .box img {
+        height: 310px;
+    }
+
+    .container-geometricos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-geometricos .box img {
+        height: 310px;
+    }
+
+    .container-tradicionales {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-tradicionales .box img {
+        height: 310px;
+    }
+
+    .container-hero .hero {
+        display: none;
+    }
+
+    .container-hero-2 {
+        width: 100%;
+    }
+
+    .container-hero-3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 446px) {
+
+    .nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgb(95, 95, 95);
+        opacity: 0.9;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        padding: 10px;
+    }
+
+    .btn-menu  {
+        display: block;
+    }
+
+    .container-realismo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-geometricos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-tradicionales {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-hero .hero {
+        display: none;
+    }
+
+    .container-hero-2 {
+        width: 100%;
+        height: 280px;
+    }
+
+    .container-hero-3 {
+        width: 100%;
+        height: 280px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
